@@ -5,12 +5,12 @@ import HomeScreen from '../components/HomeScreen';
 import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
 
-export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
+export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabThree'>) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Home Screen</Text>
+      <Text style={styles.title}>Tab Three Screen</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <HomeScreen path="/screens/TabOneScreen.tsx" />
+      <HomeScreen path="/screens/TabThreeScreen.tsx" />
     </View>
   );
 }

@@ -1,18 +1,16 @@
+import * as React from 'react';
 import * as WebBrowser from 'expo-web-browser';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 
-import Colors from '../constants/Colors';
 import { MonoText } from './StyledText';
 import { Text, View } from './Themed';
 
-export default function EditScreenInfoForHelpScreen({ path }: { path: string }) {
+export default function ContactScreen({ path }: { path: string }) {
   return (
     <View>
       <View style={styles.getStartedContainer}>
-
         <Text
-          style={styles.getStartedText}
-          light="rgba(255,255,255,0.8)">
+          style={styles.getStartedText}>
             Armaan : {"\n"}
             Discord id :  Twlight_zone#7037, {"\n"}
             Mail :  twlightzonehelp@gmail.com, {"\n"}
@@ -23,28 +21,8 @@ export default function EditScreenInfoForHelpScreen({ path }: { path: string }) 
             {"\n"}
             {"\n"}
         </Text>
-        <Text
-         style={styles.getStartedText}
-         light="rgba(255,255,255,0.8)">
-            Arsh : {"\n"}
-            Discord id :  Arsh_DEV#7525, {"\n"}
-            Mail :  //add it arsh, {"\n"}
-            WhatsApp :  //add this too, {"\n"}
-            <TouchableOpacity onPress={handleHelpPressForArsh}><MonoText>
-            Github : https://github.com/Aradhya-Shaswat {"\n"}
-            </MonoText></TouchableOpacity> 
-            {"\n"}
-            {"\n"}
-            Everyone who is added later plz add ur contact things here too :)
-        </Text>
       </View>
     </View>
-  );
-}
-
-function handleHelpPressForArsh() {
-  WebBrowser.openBrowserAsync(
-    'https://github.com/Aradhya-Shaswat'
   );
 }
 
